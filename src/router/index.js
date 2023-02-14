@@ -24,6 +24,10 @@ const router = createRouter({
       component: () => import('../views/Clients/ClientEdit.vue'),
       props: true,
     },
+
+
+
+    
     {
       path: '/sdas',
       name: 'SdaIndex',
@@ -39,6 +43,42 @@ const router = createRouter({
       name: 'SdaEdit',
       component: () => import('../views/Sdas/SdaEdit.vue'),
       props: true,
+    },
+
+
+
+
+
+    {
+      path: '/ClientSda',
+      name: 'ClientSdaIndex',
+      component: () => import('../views/ClientSda/ClientSdaIndex.vue'),
+    },
+    {
+      path: '/ClientSda/create',
+      name: 'ClientSdaCreate', 
+      component: () => import('../views/ClientSda/ClientSdaCreate.vue'),
+    },
+
+
+
+
+
+    {
+      path: '/Activites/create',
+      name: 'ActivitesCreate',
+      component: () => import('../views/Activites/ActivitesCreate.vue'),
+    },
+    {
+      path: '/Activites',
+      name: 'ActivitesIndex',
+      component: () => import('../views/Activites/ActivitesIndex.vue'),
+    },
+    {
+      path: '/Activites/:id/edit',
+      name: 'ActivitesEdit',
+      component: () => import('../views/Activites/ActivitesEdit.vue'),
+      props:true
     }
   ]
 })
